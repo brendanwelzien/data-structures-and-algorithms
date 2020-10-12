@@ -135,7 +135,7 @@ const listFoods = (recipe) => {
     let shift = stringSlice.slice(index + (2 - 1));
     index = shift.indexOf(' ');
     let shiftTwo = shift.slice(index + (2 - 1));
-    result.push(shiftTwo);
+    alterRecipe.push(shiftTwo);
   });
   return alterRecipe;
 };

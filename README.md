@@ -15,8 +15,15 @@ Use a loop to iterate through the length of an array and then subtract the array
 ## Solution
 ![arr reverse photo](assets/arrayReverse.jpeg)
 
+# Shift an Array
 
+## Challenge
+Write a function called insertShiftArray which takes in an array and the value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.
 
+## Approach & Efficiency
+By inserting a value into an existing array we used the list.insert method to give the value the required positioning. This can be applied by setting the value to a variable and using .insert with the index position.
+## Solution
+![arr shift photo](assets/arrayShift.jpeg)
 
 
 

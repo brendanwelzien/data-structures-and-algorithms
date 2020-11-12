@@ -25,6 +25,39 @@ By inserting a value into an existing array we used the list.insert method to gi
 ## Solution
 ![arr shift photo](assets/arrayShift.jpeg)
 
+# Array Binary Search
+
+## Challenge
+
+Feature Tasks
+Write a function called BinarySearch which takes in 2 parameters: a sorted array and the search key. Without utilizing any of the built-in methods available to your language, return the index of the array’s element that is equal to the search key, or -1 if the element does not exist.
+NOTE: The search algorithm used in your function should be a binary search.
+Check the Resources section for details
+Example
+Input	                        Output
+[4,8,15,16,23,42], 15	          2
+[11,22,33,44,55,66,77], 90	   -1
+
+## Approach & Efficiency
+Set the list of numbers to a variable and declare the length of that list. Distinguish the low, mid, and high of the list by using the len(list) method and divide accordingly. Given the specified key number, set the key to equal, less than, or greater than the len(list) to isolate the search.
+
+
+## Solution
+![arr binary photo](assets/arraybinary.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

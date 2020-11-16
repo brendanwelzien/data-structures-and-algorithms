@@ -10,18 +10,18 @@ class LinkedList:
 
     def includes(self, value): # return boolean if value exists
         currentPlace = self.head
-        while currentPlace:
-            if currentPlace.value == value:
+        while currentplace:
+            if currentplace.value == value:
                 return True
-            currentPlace = currentPlace.next_n
+            currentplace = currentplace.next_n
         return False
 
     def to_string(self):
-        currentPlace = self.head
+        currentplace = self.head
         string_of_values = ""
-        while currentPlace:
-            string_of_values+= f" { {str(currentPlace.value)} } ->"
-            currentPlace = currentPlace.next_n # move on to next node
+        while currentplace:
+            string_of_values+= f" { {str(currentplace.value)} } ->"
+            currentplace = currentplace.next_n # move on to next node
         return string_of_values.replace("'"," ") + " NULL" # final string
 
     def __repr__(self):

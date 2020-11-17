@@ -77,8 +77,18 @@ head -> [1] -> [3] -> [2] -> X	4, 5	Exception
  ## Solution
 ![linked list](assets/ll-insert.jpeg)
 
+# Kth from End
+
+## Challenge
+Write a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list. You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
 
 
+## Approach and Efficiency
+Create an array where current value and a following value runs through the the node list. Set a counter to increase for when the current value shifts to the next value. When the current is at the end/tail of the list return the value of k (argument).
+
+
+## Solution
+![kth-from-end](assets/kth-from-end.jpeg)
 
 
 

@@ -49,4 +49,27 @@ class Linked_list:
         if count > k:
             return value_seeking.value
 
+def zip_lists(lista, listb):
+    list_a_node = lista.head
+    list_b_node = listb.head
+    zip_list = Linked_list()
 
+    while list_a_node or list_b_node:
+        if list_a_node:
+            zip_list.append(list_a_node.value)
+            list_a_node = list_a_node.next
+        if list_b_node:
+            zip_list.append(list_b_node.value)
+            list_b_node = list_b_node.next
+    return zip_list
+
+    def __str__(self):
+        l_str = str()
+        c_node = self.head
+        if not c_node:
+            return 'None'
+        while c_node.next:
+            c_node = c_node.next
+            l_str += str(c_node.value) + ' -> '
+        l_str += str(c_node.value) + ' -> None'
+        return l_str

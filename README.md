@@ -91,8 +91,16 @@ Create an array where current value and a following value runs through the the n
 ![kth-from-end](assets/kth-from-end.jpeg)
 
 
+# Merge List
 
+## Challenge
+Write a function called zipLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list. Try and keep additional space down to O(1). You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
 
+## Approach and Efficiency
+Create a new list that will take in two separate lists. Create a loop that runs through lists a or b and appends the value. Then set the node value to the next position and repeat. Return the new list.
+
+## Solution
+![zip list](assets/zip-list.jpeg)
 
 
 

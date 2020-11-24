@@ -122,6 +122,32 @@ Define a method called isEmpty that takes no argument, and returns a boolean ind
 Create Node instantiation with parameters of self and value. Also create classes that include parameters for the front, rear, and top of the call stack. Build methods such as pop, push, empty, and queue to give complexity to the stack.
 Big O complexity --> O(1) for *peek, is_empty, push, pop, enqueue, dequeue*
 
+
+# Stacks and Queues
+
+## Challenge
+Create a brand new PseudoQueue class. Do not use an existing Queue. Instead, this PseudoQueue class will implement our standard queue interface (the two methods listed below), but will internally only utilize 2 Stack objects. Ensure that you create your class with the following methods:
+
+enqueue(value) which inserts value into the PseudoQueue, using a first-in, first-out approach.
+dequeue() which extracts a value from the PseudoQueue, using a first-in, first-out approach.
+The Stack instances have only push, pop, and peek methods. You should use your own Stack implementation. Instantiate these Stack objects in your PseudoQueue constructor.
+
+## Approach and Efficiency
+Create two stacks where one is the main and one is temporary. Pop / dequeue all node valeus into temporary from main until empty. Push/ enqueue desired element(s) into main stack and pop / dequeue back elements from temporary stack back into main stack.
+
+## Solution
+![stacks and queues](assets/stacks_with_queues.jpeg)
+
+
+
+
+
+
+
+
+
+
+
 ### Folder and Challenge Setup
 
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.

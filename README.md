@@ -122,6 +122,24 @@ Define a method called isEmpty that takes no argument, and returns a boolean ind
 Create Node instantiation with parameters of self and value. Also create classes that include parameters for the front, rear, and top of the call stack. Build methods such as pop, push, empty, and queue to give complexity to the stack.
 Big O complexity --> O(1) for *peek, is_empty, push, pop, enqueue, dequeue*
 
+# Animal Shelter
+
+## Challenge
+Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
+Implement the following methods:
+enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.
+dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then return null.
+
+
+## Approach and Efficiency
+Create animal shelter class with enqueue and dequeue methods
+enqueue : check type of animal, push animal into shelter / give error otherwise
+dequeue : check type of animal.. if wanting a cat then remove elements until the the requested value is present
+
+## Solution
+![animal shelter](python/code_challenges/animal-shelter.jpeg)
+
+
 ### Folder and Challenge Setup
 
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.

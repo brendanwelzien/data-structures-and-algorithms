@@ -160,7 +160,15 @@ Create methods for traversing the tree where you check the root value and insert
 ## Solution
 ![tree](assets/tree.jpeg)
 
+# Maximum Value Binary Tree
 
+## Challenge
+Write an instance method called find-maximum-value. Without utilizing any of the built-in methods available to your language, return the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+
+## Approach and Efficiency
+Write a max value function that evaluates the rows of a binary tree. The row of each binary tree will be assessed via its left and right where the node values will be compared to the current value / max value.
+## Solution
+![max tree](assets/max-tree.jpeg)
 
 
 

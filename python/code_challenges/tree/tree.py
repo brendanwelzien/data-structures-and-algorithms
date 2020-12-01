@@ -1,3 +1,4 @@
+
 class Node:
     def __init__(self, value, left=None, right=None):
         self.left = left
@@ -71,6 +72,9 @@ class BinarySearchTree(BinaryTree):
             return False
         else:
             return True
+
+
+
 
 tree_stuff = BinarySearchTree()
 tree_stuff.add(2)

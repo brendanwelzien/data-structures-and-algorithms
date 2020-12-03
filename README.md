@@ -170,7 +170,14 @@ Write a max value function that evaluates the rows of a binary tree. The row of 
 ## Solution
 ![max tree](assets/max-tree.jpeg)
 
+# Breadth first
 
+## Challenge
+Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach, and return a list of the values in the tree in the order they were encountered.
+## Approach and Efficiency
+Create a binary tree and plan to use queue and enqueue the root as the starting point. Append what is is front to a list, if it has a left or right side enqueue it for appending and then return the list.
+## Solution
+![breadth first](assets/breadth-first.png)
 
 
 

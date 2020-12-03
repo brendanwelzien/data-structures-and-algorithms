@@ -1,5 +1,5 @@
 import pytest
-from tree import Node, BinaryTree, BinarySearchTree
+from tree import Node, BinaryTree, BinarySearchTree, Queues
 
 def test_tree_structure():
     assert BinaryTree()
@@ -56,3 +56,14 @@ def test_in_order():
     actual = tree_stuff.in_order()
     expected = [60, 80, 85, 90, 91, 95, 101]
     assert actual == expected
+
+def test_breadth_first():
+    tree = BinaryTree()
+    tree.add(5)
+    tree.add(6)
+    tree.add(7)
+    tree.add(8)
+    actual = tree.breadth_first
+    expected = []
+
+

@@ -1,5 +1,5 @@
 import pytest
-from tree_non_search import Node, BinaryTree
+from max_tree import Node, BinaryTree
 
 def test_can_form_tree(default_tree):
 	assert default_tree.head.right.left.value == 17

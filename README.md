@@ -172,13 +172,30 @@ Write a max value function that evaluates the rows of a binary tree. The row of 
 
 
 
+# Insertion Sorting
+![sort](assets/insertionsort.jpeg)
+### Worked with Yoni Palagashvilli
+## Challenge
+Given an input array, create a function that goes through each value in the array, comparing the current index's value to the next index's value. At each pass through, the function will update the temporary by moving the current index to its correct place. At the end of every pass through, the temporary array replaces the current output array.
+## Blog
+1. Compare the index position with a temporary position and shift the index positions accordingly.
 
+`[8*, 4*, 23, 42, 16, 15]`
 
+2. grab index 1 and compare its value to index 0 --> 8 > 4, so move 8 to the right
+  `[4*, 8*, 23, 42, 16, 15]`
 
+3. grab index 2 and compare its value to index 1 --> 4 < 8 means there is no movement that needs to occur
+  `[4*, 8*, 23, 42, 16, 15]`
 
-
-
-
+4. grab index 3 and compare its value to index 2 --> 8 < 23, means there is no movement that needs to occur...
+  `[4, 8*, 23*, 42, 16, 15]`
+5. Do this until a value you are comparing is greater than the temporary position
+6. Now, we reach index 3 and 4 --> when comparing index 4 to 3, 42 > 16, so 42 needs to move to the right and 16 now needs to move to the left until its value is in the appropriate position
+  `[4, 8, 23, 42*, 16*, 15]`
+  - we want it to be `[4, 8, 16*, 23, 42*, 15]`
+7. Repeat step 6 for the last index position
+8. You should then have a sorted list/array
 
 
 

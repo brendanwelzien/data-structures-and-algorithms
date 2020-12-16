@@ -197,6 +197,71 @@ Given an input array, create a function that goes through each value in the arra
 7. Repeat step 6 for the last index position
 8. You should then have a sorted list/array
 
+# Merge Sorting Blog
+
+## Problem
+Sort and merge an array/list by splitting it into halves, sort them accordingly and then merge again to ensure that sorting is properly executed for its entire length.
+
+## PseudoCode
+```python
+ALGORITHM Mergesort(arr)
+    DECLARE n <-- arr.length
+
+    if n > 1
+      DECLARE mid <-- n/2
+      DECLARE left <-- arr[0...mid]
+      DECLARE right <-- arr[mid...n]
+      // sort the left side
+      Mergesort(left)
+      // sort the right side
+      Mergesort(right)
+      // merge the sorted left and right sides together
+      Merge(left, right, arr)
+
+ALGORITHM Merge(left, right, arr)
+    DECLARE i <-- 0
+    DECLARE j <-- 0
+    DECLARE k <-- 0
+
+    while i < left.length && j < right.length
+        if left[i] <= right[j]
+            arr[k] <-- left[i]
+            i <-- i + 1
+        else
+            arr[k] <-- right[j]
+            j <-- j + 1
+
+        k <-- k + 1
+
+    if i = left.length
+       set remaining entries in arr to remaining values in right
+    else
+       set remaining entries in arr to remaining values in left
+```
+
+## Outlook
+![outlook](assets/outlook.png)
+
+## Step 1
+Split the list/array in half
+![stepone](assets/stepone.png)
+
+## Step 2
+Set i and j as variables for each half, set k variable to traverse through the entire list/array.
+## Step 3
+Sort left and right for each half, and compare remaining values to k to ensure sorting is done properly.
+![steptwothree](assets/steptwothree.png)
+
+## Step 4
+Merge each sorted half together by placing right values into left one by one and comparing its position to k
+![stepfour](assets/stepfour.png)
+## Step 5
+Run test to see if the the list/array is sorted
+
+
+
+
+
 
 
 

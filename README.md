@@ -259,8 +259,14 @@ Merge each sorted half together by placing right values into left one by one and
 Run test to see if the the list/array is sorted
 
 
+## Quick Sort
 
-
+## Step 1
+![one](assets/one.png)
+## Step 2
+![two](assets/two.png)
+## Step 3
+![three](assets/three.png)
 
 
 

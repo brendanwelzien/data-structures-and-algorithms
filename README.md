@@ -282,6 +282,22 @@ hash: takes in an arbitrary key and returns an index in the collection.
 ## Approach
 Create methods that will hash a key and its value into a table. Also make the add, get, set methods to ensure that we are able to grab the associated value with the key. Test for duplicates use a linked list in place of this edge case. Big O is O(1) since we know exactly where to traverse for the key:value pair.
 
+# Repeated Words
+
+## Problem Domain
+Write a function that  gets a string and returns the frequency of repeated words
+
+## Approach and Efficiency
+1. split the string and put into list
+
+2. set the new list
+
+3. append all words that are not in the new list from the input string
+
+4. use count and print the frequency of repeated words
+
+## Solution
+![repeated words](assets/repeated_word.png)
 
 
 

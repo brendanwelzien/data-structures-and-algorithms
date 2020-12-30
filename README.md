@@ -299,6 +299,30 @@ Write a function that  gets a string and returns the frequency of repeated words
 ## Solution
 ![repeated words](assets/repeated_word.png)
 
+# Multi-Bracket Validation
+
+## Problem Domain
+Your function should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced. There are 3 types of brackets:
+
+Round Brackets : ()
+Square Brackets : []
+Curly Brackets : {}
+
+## Approach
+
+1. Create a list to hold one side of the brackets --> (, [, {
+2. Begin loop through the given string of brackets
+3. if bracket has a closing bracket that matches, add to queue
+4. if there is not a matching closing bracket, return false
+5. edge case- if the list is empty return true
+6. edge case- if the list still remains not empty with unmatching  brackets, return false
+
+## Solution
+![validation](assets/validation.png)
+
+
+
+
 
 
 ### Folder and Challenge Setup

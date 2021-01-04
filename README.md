@@ -321,6 +321,31 @@ Curly Brackets : {}
 ![validation](assets/validation.png)
 
 
+# Insertion List
+
+## Problem Domain
+Sort a list so it is in ascending order by using insertion sort!
+
+[5, 10, 6, 2, 4]
+
+## Approach
+Strategy:
+- split the list so into two halves and create an empty list
+- go through the list for each node
+- remember to make the head of the list turn into the head of the sorted list
+
+Big O:
+
+time:O(n^2) --> may take max amount of time depending on initial order of list (may all be in reverse)
+space: 0(1)
+
+## Solution
+![insertion](assets/insertion.png)
+
+
+
+
+
 
 
 

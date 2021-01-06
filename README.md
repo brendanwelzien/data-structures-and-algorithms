@@ -342,6 +342,28 @@ space: 0(1)
 ## Solution
 ![insertion](assets/insertion.png)
 
+# Divisible
+
+## Problem Domain
+​Find amount of pairs that are divisble in an array
+- one from a pair should be able to divide and return 0
+- in lamens terms--> find pairs that are divisible
+## Approach
+1. insert array elements into a for loop
+
+2. find element in array
+
+3. find multiple of element and add to result, then compare w other elements
+
+4. check for negatives, zeros, or repetitions
+
+
+## Solution
+![divisible](assets/divisible.png)
+
+
+
+
 
 
 

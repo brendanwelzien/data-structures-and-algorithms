@@ -362,6 +362,35 @@ space: 0(1)
 ![divisible](assets/divisible.png)
 
 
+# Linked List Practice Part 1
+
+## Problem Domain
+
+Create a linked list that can insert at head of linked list
+
+Create method that checks if a value exists
+
+Create a method that appends a new node to TAIL of the list
+
+## Approach and Efficiency
+create node class with current and next with properties of value
+
+create a linked list class with head as first node
+
+create a function that inserts node as head
+
+create a function that verifies if node is in list by checking its value
+  set current value to current
+  check if current.next.value has a value
+create a function to add node to tail
+  check for current.next
+  make new node the current.next since it would be last
+  
+## Solution
+![ll](assets/llPrac.png)
+
+
+
 
 
 

@@ -385,13 +385,38 @@ create a function that verifies if node is in list by checking its value
 create a function to add node to tail
   check for current.next
   make new node the current.next since it would be last
-  
+
 ## Solution
 ![ll](assets/llPrac.png)
 
 
+# Linked List Practice Two
 
+## Problem Domain
+Problem Domain: Linked List Continued
+Create a function that inserts a node before a specified node
 
+Create a function to insert a node after a specified node
+
+Create a function that returns a node's value k positions away from the tai
+## Approach and Efficiency
+Algorithm:
+
+Inserting Before:
+
+  if current.next is specified value, create node and put before specified value
+
+Inserting After:
+  if current.value is the specified value then current.next is the new value
+
+return k positions:
+  start with empty list
+  raise error if less than 0
+  append value of current and move to next
+  check for reverse of list to see if it is the same length
+  return k -1 of the list
+## Solution
+![lltwo](assets/LLtwo.png)
 
 
 

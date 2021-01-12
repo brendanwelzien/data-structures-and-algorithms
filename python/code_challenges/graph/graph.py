@@ -35,7 +35,24 @@ class Graph:
 
     def size(self):
         return len(self.adjacency_list)
-        
+
+    def breadth_first(self, vertex):
+
+        visited = (max(self.adjacency_list) + 1) * [False]
+        nodeOrder = []
+
+        # Mark the source node as
+        # visited and enqueue it
+        nodeOrder.append(vertex)
+        visited[vertex] = True
+        while nodeOrder:
+            vertex = nodeOrder.pop(0)
+            print(vertex, "")
+
+            for v in self.adjacency_list[vertex]:
+                if visited[v] == False:
+                    nodeOrder.append(v)
+                    visited[v] = True
 
 
 class Vertex:
@@ -46,6 +63,7 @@ class Vertex:
         return ('value is' + self.value)
 
 class Edge:
-    def __init__(self, vertex, weight=0)
-    self.vertex = vertex
-    self.weight = weight
+    def __init__(self, vertex, weight=0):
+        self.vertex = vertex
+        self.weight = weight
+
